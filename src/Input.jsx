@@ -8,7 +8,7 @@ export function Input({ setlocations, locations }) {
 
 	const geoCode = async (q) => {
 		const response = await fetch(
-			`http://api.openweathermap.org/geo/1.0/direct?q=${q}&limit=5&appid=${key}`
+			`https://api.openweathermap.org/geo/1.0/direct?q=${q}&limit=5&appid=${key}`
 		);
 		return await response.json();
 	};
